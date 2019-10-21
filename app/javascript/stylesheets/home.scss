@@ -1,0 +1,16 @@
+.hero-img {
+  background-image: url('../images/moose_watching.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 400px;
+}
+
+.info {
+  font-size: 20px;
+  margin: 0 200px;
+
+  @include media-breakpoint-down(sm) {
+    margin: 0 30px;
+  }
+}
