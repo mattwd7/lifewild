@@ -1,8 +1,2 @@
-:ruby
-  props = {
-    copy: local_assigns.fetch(:copy, nil),
-    href: local_assigns.fetch(:href, '#')
-  }
-
-%a.btn.btn-outline-success.my-3{ role: "button", href: props[:href] }
-  = props[:copy]
+%a.btn.my-3{ **local_assigns, role: "button" }
+  = yield

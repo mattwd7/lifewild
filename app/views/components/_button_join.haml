@@ -1,7 +1,11 @@
 :ruby
+  button_class = (ab_test('join_button_color') == 'blue') ?
+    'btn-outline-primary' :
+    'btn-outline-success'
+
   options = {
-    copy: local_assigns.fetch(:copy, 'Join the Beta'),
-    href: 'https://docs.google.com/forms/d/e/1FAIpQLSdG-zurMH99a2ZPc3n1JEpqTWb-7mOIOmVGWgI7AVx_aQ5Huw/viewform'
+    class: button_class,
+    href: '/join_beta',
   }
 
-= button(**options)
+= button(**options) { 'Join the Beta' }

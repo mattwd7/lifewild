@@ -6,8 +6,7 @@ gem 'rails', '~> 6.0.0'
 gem 'hamlit'
 gem 'haml-rails'
 gem 'pg'
-gem 'split'
-gem 'key_struct'
+gem 'split', require: 'split/dashboard'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'

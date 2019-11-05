@@ -1,0 +1,6 @@
+join_button_color:
+  alternatives:
+    - name: 'control'
+      percent: 50
+    - name: 'blue'
+      percent: 50
